@@ -9,20 +9,31 @@
 /* Begin PBXBuildFile section */
 		EA5990E22BC036DF00205A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5990E12BC036DF00205A93 /* AppDelegate.swift */; };
 		EA5990E42BC036DF00205A93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5990E32BC036DF00205A93 /* SceneDelegate.swift */; };
-		EA5990E62BC036DF00205A93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5990E52BC036DF00205A93 /* ViewController.swift */; };
 		EA5990EB2BC036E200205A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5990EA2BC036E200205A93 /* Assets.xcassets */; };
 		EA5990EE2BC036E200205A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5990EC2BC036E200205A93 /* LaunchScreen.storyboard */; };
 		EA59911F2BC1934900205A93 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59911B2BC1934900205A93 /* APIConstants.swift */; };
 		EA5991202BC1934900205A93 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59911C2BC1934900205A93 /* APIClient.swift */; };
 		EA5991212BC1934900205A93 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59911D2BC1934900205A93 /* Request.swift */; };
 		EA5991222BC1934900205A93 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59911E2BC1934900205A93 /* Response.swift */; };
+		EA5991242BC1C88600205A93 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991232BC1C88600205A93 /* ContentCell.swift */; };
+		EA59912B2BC1C89D00205A93 /* MediaContentListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991252BC1C89D00205A93 /* MediaContentListProtocols.swift */; };
+		EA59912C2BC1C89D00205A93 /* MediaContentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991262BC1C89D00205A93 /* MediaContentListPresenter.swift */; };
+		EA59912D2BC1C89D00205A93 /* MediaContentListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991272BC1C89D00205A93 /* MediaContentListController.swift */; };
+		EA59912E2BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991282BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift */; };
+		EA59912F2BC1C89D00205A93 /* MediaContentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991292BC1C89D00205A93 /* MediaContentListInteractor.swift */; };
+		EA5991302BC1C89D00205A93 /* MediaContentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59912A2BC1C89D00205A93 /* MediaContentListRouter.swift */; };
+		EA5991342BC1D0E600205A93 /* MediaContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991332BC1D0E600205A93 /* MediaContentResponse.swift */; };
+		EA5991362BC1E29E00205A93 /* MediaContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991352BC1E29E00205A93 /* MediaContentListViewModel.swift */; };
+		EA5991392BC2795E00205A93 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991382BC2795E00205A93 /* URLImageView.swift */; };
+		EA59913C2BC3DFA900205A93 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59913B2BC3DFA900205A93 /* UIViewController + Extensions.swift */; };
+		EA59913E2BC3E03200205A93 /* BaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59913D2BC3E03200205A93 /* BaseLoadingView.swift */; };
+		EA5991402BC3E05300205A93 /* ListLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59913F2BC3E05300205A93 /* ListLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA5990DE2BC036DF00205A93 /* SearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5990E12BC036DF00205A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA5990E32BC036DF00205A93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA5990E52BC036DF00205A93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA5990EA2BC036E200205A93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA5990ED2BC036E200205A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA5990EF2BC036E200205A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,6 +41,19 @@
 		EA59911C2BC1934900205A93 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		EA59911D2BC1934900205A93 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		EA59911E2BC1934900205A93 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		EA5991232BC1C88600205A93 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		EA5991252BC1C89D00205A93 /* MediaContentListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaContentListProtocols.swift; path = MediaContentList/MediaContentListProtocols.swift; sourceTree = "<group>"; };
+		EA5991262BC1C89D00205A93 /* MediaContentListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaContentListPresenter.swift; path = MediaContentList/MediaContentListPresenter.swift; sourceTree = "<group>"; };
+		EA5991272BC1C89D00205A93 /* MediaContentListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaContentListController.swift; path = MediaContentList/MediaContentListController.swift; sourceTree = "<group>"; };
+		EA5991282BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaContentListControllerConfigurator.swift; sourceTree = "<group>"; };
+		EA5991292BC1C89D00205A93 /* MediaContentListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaContentListInteractor.swift; path = MediaContentList/MediaContentListInteractor.swift; sourceTree = "<group>"; };
+		EA59912A2BC1C89D00205A93 /* MediaContentListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaContentListRouter.swift; path = MediaContentList/MediaContentListRouter.swift; sourceTree = "<group>"; };
+		EA5991332BC1D0E600205A93 /* MediaContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContentResponse.swift; sourceTree = "<group>"; };
+		EA5991352BC1E29E00205A93 /* MediaContentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContentListViewModel.swift; sourceTree = "<group>"; };
+		EA5991382BC2795E00205A93 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
+		EA59913B2BC3DFA900205A93 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		EA59913D2BC3E03200205A93 /* BaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingView.swift; sourceTree = "<group>"; };
+		EA59913F2BC3E05300205A93 /* ListLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +89,8 @@
 				EA5990F52BC039AC00205A93 /* App */,
 				EA5991062BC1850300205A93 /* Network */,
 				EA5990F72BC03A3900205A93 /* Modules */,
+				EA59913A2BC3DF8000205A93 /* Extensions */,
+				EA5991372BC2793E00205A93 /* UIComponents */,
 				EA5990F62BC03A1700205A93 /* Resources */,
 			);
 			path = SearchApp;
@@ -92,7 +118,15 @@
 		EA5990F72BC03A3900205A93 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EA5990E52BC036DF00205A93 /* ViewController.swift */,
+				EA5991322BC1D0B200205A93 /* Models */,
+				EA5991312BC1C8A100205A93 /* Cell */,
+				EA5991282BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift */,
+				EA5991272BC1C89D00205A93 /* MediaContentListController.swift */,
+				EA5991292BC1C89D00205A93 /* MediaContentListInteractor.swift */,
+				EA5991262BC1C89D00205A93 /* MediaContentListPresenter.swift */,
+				EA5991252BC1C89D00205A93 /* MediaContentListProtocols.swift */,
+				EA59912A2BC1C89D00205A93 /* MediaContentListRouter.swift */,
+				EA5991352BC1E29E00205A93 /* MediaContentListViewModel.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -106,6 +140,40 @@
 				EA59911E2BC1934900205A93 /* Response.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		EA5991312BC1C8A100205A93 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EA5991232BC1C88600205A93 /* ContentCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EA5991322BC1D0B200205A93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA5991332BC1D0E600205A93 /* MediaContentResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA5991372BC2793E00205A93 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EA5991382BC2795E00205A93 /* URLImageView.swift */,
+				EA59913D2BC3E03200205A93 /* BaseLoadingView.swift */,
+				EA59913F2BC3E05300205A93 /* ListLoadingView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		EA59913A2BC3DF8000205A93 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA59913B2BC3DFA900205A93 /* UIViewController + Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,12 +247,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5991202BC1934900205A93 /* APIClient.swift in Sources */,
+				EA5991362BC1E29E00205A93 /* MediaContentListViewModel.swift in Sources */,
+				EA59913E2BC3E03200205A93 /* BaseLoadingView.swift in Sources */,
 				EA59911F2BC1934900205A93 /* APIConstants.swift in Sources */,
-				EA5990E62BC036DF00205A93 /* ViewController.swift in Sources */,
+				EA59912D2BC1C89D00205A93 /* MediaContentListController.swift in Sources */,
 				EA5990E22BC036DF00205A93 /* AppDelegate.swift in Sources */,
 				EA5991212BC1934900205A93 /* Request.swift in Sources */,
 				EA5991222BC1934900205A93 /* Response.swift in Sources */,
+				EA59913C2BC3DFA900205A93 /* UIViewController + Extensions.swift in Sources */,
 				EA5990E42BC036DF00205A93 /* SceneDelegate.swift in Sources */,
+				EA59912E2BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift in Sources */,
+				EA5991302BC1C89D00205A93 /* MediaContentListRouter.swift in Sources */,
+				EA59912B2BC1C89D00205A93 /* MediaContentListProtocols.swift in Sources */,
+				EA59912C2BC1C89D00205A93 /* MediaContentListPresenter.swift in Sources */,
+				EA59912F2BC1C89D00205A93 /* MediaContentListInteractor.swift in Sources */,
+				EA5991242BC1C88600205A93 /* ContentCell.swift in Sources */,
+				EA5991392BC2795E00205A93 /* URLImageView.swift in Sources */,
+				EA5991402BC3E05300205A93 /* ListLoadingView.swift in Sources */,
+				EA5991342BC1D0E600205A93 /* MediaContentResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
