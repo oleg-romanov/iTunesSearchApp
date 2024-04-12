@@ -103,7 +103,13 @@ extension MediaContentListController: UICollectionViewDataSource {
     }
 }
 
+// MARK: - UICollectionViewDelegate
+
 extension MediaContentListController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        router.routeToDetailMediaContent(with: mediaContentList[indexPath.item])
+    }
+    
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let lastRowIndex = self.collectionView.numberOfItems(inSection: indexPath.section) - 1
         if lastRowIndex > .zero, self.collectionView.contentOffset.y > self.collectionView.bounds.height {

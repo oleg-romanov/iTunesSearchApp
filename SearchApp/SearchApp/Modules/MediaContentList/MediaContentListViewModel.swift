@@ -13,6 +13,8 @@ struct MediaContentListViewModel {
     let artistName: String
     let kind: String
     let releaseDate: String
-    let country: String
-    let trackPrice: String
+    let collectionName: String
+    let description: String
+    let trackViewUrlString: String
+    let artistId: Int
 }

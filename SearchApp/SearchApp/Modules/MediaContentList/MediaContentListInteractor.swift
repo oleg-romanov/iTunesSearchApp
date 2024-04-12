@@ -27,9 +27,9 @@ final class MediaContentListInteractor: MediaContentListBusinessLogic {
     func fetchContentMediaList(term: String) async {
         let query: [(String, String?)] = [
             ("term", term),
-            ("limit", "20"),
-            ("media", "movie"),
-            ("media", "music")
+            ("media", "music"),
+            ("media", "tvShow"),
+            ("limit", "40")
         ]
         do {
             let mediaContentResponse: MediaContentResponse = try await networkService.send(Request(path: "/search", query: query)).value
