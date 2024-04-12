@@ -20,5 +20,5 @@ protocol MediaContentListDisplayLogic: AnyObject {
 }
 
 protocol MediaContentListRoutingLogic: AnyObject {
-    // TODO: Переход к экрану детального просмотра
+    func routeToDetailMediaContent(with model: MediaContentListViewModel)
 }

@@ -16,18 +16,26 @@
 		EA5991212BC1934900205A93 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59911D2BC1934900205A93 /* Request.swift */; };
 		EA5991222BC1934900205A93 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59911E2BC1934900205A93 /* Response.swift */; };
 		EA5991242BC1C88600205A93 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991232BC1C88600205A93 /* ContentCell.swift */; };
-		EA59912B2BC1C89D00205A93 /* MediaContentListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991252BC1C89D00205A93 /* MediaContentListProtocols.swift */; };
-		EA59912C2BC1C89D00205A93 /* MediaContentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991262BC1C89D00205A93 /* MediaContentListPresenter.swift */; };
-		EA59912D2BC1C89D00205A93 /* MediaContentListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991272BC1C89D00205A93 /* MediaContentListController.swift */; };
 		EA59912E2BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991282BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift */; };
-		EA59912F2BC1C89D00205A93 /* MediaContentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991292BC1C89D00205A93 /* MediaContentListInteractor.swift */; };
-		EA5991302BC1C89D00205A93 /* MediaContentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59912A2BC1C89D00205A93 /* MediaContentListRouter.swift */; };
 		EA5991342BC1D0E600205A93 /* MediaContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991332BC1D0E600205A93 /* MediaContentResponse.swift */; };
 		EA5991362BC1E29E00205A93 /* MediaContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991352BC1E29E00205A93 /* MediaContentListViewModel.swift */; };
 		EA5991392BC2795E00205A93 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991382BC2795E00205A93 /* URLImageView.swift */; };
 		EA59913C2BC3DFA900205A93 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59913B2BC3DFA900205A93 /* UIViewController + Extensions.swift */; };
 		EA59913E2BC3E03200205A93 /* BaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59913D2BC3E03200205A93 /* BaseLoadingView.swift */; };
 		EA5991402BC3E05300205A93 /* ListLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59913F2BC3E05300205A93 /* ListLoadingView.swift */; };
+		EA5991552BC559B600205A93 /* MediaContentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991502BC559B600205A93 /* MediaContentListPresenter.swift */; };
+		EA5991562BC559B600205A93 /* MediaContentListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991512BC559B600205A93 /* MediaContentListProtocols.swift */; };
+		EA5991572BC559B600205A93 /* MediaContentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991522BC559B600205A93 /* MediaContentListRouter.swift */; };
+		EA5991582BC559B600205A93 /* MediaContentListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991532BC559B600205A93 /* MediaContentListController.swift */; };
+		EA5991592BC559B600205A93 /* MediaContentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991542BC559B600205A93 /* MediaContentListInteractor.swift */; };
+		EA59915C2BC55AEA00205A93 /* DetailMediaContentProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59915B2BC55AEA00205A93 /* DetailMediaContentProtocols.swift */; };
+		EA59915E2BC55B7F00205A93 /* DetailMediaContentControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59915D2BC55B7F00205A93 /* DetailMediaContentControllerConfigurator.swift */; };
+		EA5991602BC55BE300205A93 /* DetailMediaContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59915F2BC55BE300205A93 /* DetailMediaContentController.swift */; };
+		EA5991622BC55C4C00205A93 /* DetailMediaContentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991612BC55C4C00205A93 /* DetailMediaContentPresenter.swift */; };
+		EA5991642BC55C5C00205A93 /* DetailMediaContentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991632BC55C5C00205A93 /* DetailMediaContentInteractor.swift */; };
+		EA5991662BC55C6900205A93 /* DetailMediaContentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991652BC55C6900205A93 /* DetailMediaContentRouter.swift */; };
+		EA5991692BC71A8300205A93 /* ArtistInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991682BC71A8300205A93 /* ArtistInfoResponse.swift */; };
+		EA59916B2BC7230A00205A93 /* ArtistInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59916A2BC7230A00205A93 /* ArtistInfoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,18 +50,26 @@
 		EA59911D2BC1934900205A93 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		EA59911E2BC1934900205A93 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		EA5991232BC1C88600205A93 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
-		EA5991252BC1C89D00205A93 /* MediaContentListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaContentListProtocols.swift; path = MediaContentList/MediaContentListProtocols.swift; sourceTree = "<group>"; };
-		EA5991262BC1C89D00205A93 /* MediaContentListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaContentListPresenter.swift; path = MediaContentList/MediaContentListPresenter.swift; sourceTree = "<group>"; };
-		EA5991272BC1C89D00205A93 /* MediaContentListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaContentListController.swift; path = MediaContentList/MediaContentListController.swift; sourceTree = "<group>"; };
 		EA5991282BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaContentListControllerConfigurator.swift; sourceTree = "<group>"; };
-		EA5991292BC1C89D00205A93 /* MediaContentListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaContentListInteractor.swift; path = MediaContentList/MediaContentListInteractor.swift; sourceTree = "<group>"; };
-		EA59912A2BC1C89D00205A93 /* MediaContentListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaContentListRouter.swift; path = MediaContentList/MediaContentListRouter.swift; sourceTree = "<group>"; };
 		EA5991332BC1D0E600205A93 /* MediaContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContentResponse.swift; sourceTree = "<group>"; };
 		EA5991352BC1E29E00205A93 /* MediaContentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContentListViewModel.swift; sourceTree = "<group>"; };
 		EA5991382BC2795E00205A93 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		EA59913B2BC3DFA900205A93 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 		EA59913D2BC3E03200205A93 /* BaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingView.swift; sourceTree = "<group>"; };
 		EA59913F2BC3E05300205A93 /* ListLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLoadingView.swift; sourceTree = "<group>"; };
+		EA5991502BC559B600205A93 /* MediaContentListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaContentListPresenter.swift; sourceTree = "<group>"; };
+		EA5991512BC559B600205A93 /* MediaContentListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaContentListProtocols.swift; sourceTree = "<group>"; };
+		EA5991522BC559B600205A93 /* MediaContentListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaContentListRouter.swift; sourceTree = "<group>"; };
+		EA5991532BC559B600205A93 /* MediaContentListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaContentListController.swift; sourceTree = "<group>"; };
+		EA5991542BC559B600205A93 /* MediaContentListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaContentListInteractor.swift; sourceTree = "<group>"; };
+		EA59915B2BC55AEA00205A93 /* DetailMediaContentProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMediaContentProtocols.swift; sourceTree = "<group>"; };
+		EA59915D2BC55B7F00205A93 /* DetailMediaContentControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMediaContentControllerConfigurator.swift; sourceTree = "<group>"; };
+		EA59915F2BC55BE300205A93 /* DetailMediaContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMediaContentController.swift; sourceTree = "<group>"; };
+		EA5991612BC55C4C00205A93 /* DetailMediaContentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMediaContentPresenter.swift; sourceTree = "<group>"; };
+		EA5991632BC55C5C00205A93 /* DetailMediaContentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMediaContentInteractor.swift; sourceTree = "<group>"; };
+		EA5991652BC55C6900205A93 /* DetailMediaContentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMediaContentRouter.swift; sourceTree = "<group>"; };
+		EA5991682BC71A8300205A93 /* ArtistInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfoResponse.swift; sourceTree = "<group>"; };
+		EA59916A2BC7230A00205A93 /* ArtistInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,15 +134,8 @@
 		EA5990F72BC03A3900205A93 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EA5991322BC1D0B200205A93 /* Models */,
-				EA5991312BC1C8A100205A93 /* Cell */,
-				EA5991282BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift */,
-				EA5991272BC1C89D00205A93 /* MediaContentListController.swift */,
-				EA5991292BC1C89D00205A93 /* MediaContentListInteractor.swift */,
-				EA5991262BC1C89D00205A93 /* MediaContentListPresenter.swift */,
-				EA5991252BC1C89D00205A93 /* MediaContentListProtocols.swift */,
-				EA59912A2BC1C89D00205A93 /* MediaContentListRouter.swift */,
-				EA5991352BC1E29E00205A93 /* MediaContentListViewModel.swift */,
+				EA59914F2BC559B600205A93 /* MediaContentList */,
+				EA59915A2BC55A8500205A93 /* DetailMediaContent */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -174,6 +183,45 @@
 				EA59913B2BC3DFA900205A93 /* UIViewController + Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA59914F2BC559B600205A93 /* MediaContentList */ = {
+			isa = PBXGroup;
+			children = (
+				EA5991312BC1C8A100205A93 /* Cell */,
+				EA5991322BC1D0B200205A93 /* Models */,
+				EA5991282BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift */,
+				EA5991512BC559B600205A93 /* MediaContentListProtocols.swift */,
+				EA5991532BC559B600205A93 /* MediaContentListController.swift */,
+				EA5991502BC559B600205A93 /* MediaContentListPresenter.swift */,
+				EA5991542BC559B600205A93 /* MediaContentListInteractor.swift */,
+				EA5991352BC1E29E00205A93 /* MediaContentListViewModel.swift */,
+				EA5991522BC559B600205A93 /* MediaContentListRouter.swift */,
+			);
+			path = MediaContentList;
+			sourceTree = "<group>";
+		};
+		EA59915A2BC55A8500205A93 /* DetailMediaContent */ = {
+			isa = PBXGroup;
+			children = (
+				EA5991672BC71A7000205A93 /* Models */,
+				EA59915D2BC55B7F00205A93 /* DetailMediaContentControllerConfigurator.swift */,
+				EA59915B2BC55AEA00205A93 /* DetailMediaContentProtocols.swift */,
+				EA59915F2BC55BE300205A93 /* DetailMediaContentController.swift */,
+				EA5991612BC55C4C00205A93 /* DetailMediaContentPresenter.swift */,
+				EA5991632BC55C5C00205A93 /* DetailMediaContentInteractor.swift */,
+				EA5991652BC55C6900205A93 /* DetailMediaContentRouter.swift */,
+				EA59916A2BC7230A00205A93 /* ArtistInfoViewModel.swift */,
+			);
+			path = DetailMediaContent;
+			sourceTree = "<group>";
+		};
+		EA5991672BC71A7000205A93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA5991682BC71A8300205A93 /* ArtistInfoResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,24 +295,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5991202BC1934900205A93 /* APIClient.swift in Sources */,
+				EA5991602BC55BE300205A93 /* DetailMediaContentController.swift in Sources */,
 				EA5991362BC1E29E00205A93 /* MediaContentListViewModel.swift in Sources */,
+				EA5991562BC559B600205A93 /* MediaContentListProtocols.swift in Sources */,
 				EA59913E2BC3E03200205A93 /* BaseLoadingView.swift in Sources */,
 				EA59911F2BC1934900205A93 /* APIConstants.swift in Sources */,
-				EA59912D2BC1C89D00205A93 /* MediaContentListController.swift in Sources */,
+				EA5991622BC55C4C00205A93 /* DetailMediaContentPresenter.swift in Sources */,
+				EA5991552BC559B600205A93 /* MediaContentListPresenter.swift in Sources */,
 				EA5990E22BC036DF00205A93 /* AppDelegate.swift in Sources */,
+				EA59915E2BC55B7F00205A93 /* DetailMediaContentControllerConfigurator.swift in Sources */,
 				EA5991212BC1934900205A93 /* Request.swift in Sources */,
+				EA5991582BC559B600205A93 /* MediaContentListController.swift in Sources */,
+				EA59915C2BC55AEA00205A93 /* DetailMediaContentProtocols.swift in Sources */,
+				EA5991592BC559B600205A93 /* MediaContentListInteractor.swift in Sources */,
 				EA5991222BC1934900205A93 /* Response.swift in Sources */,
 				EA59913C2BC3DFA900205A93 /* UIViewController + Extensions.swift in Sources */,
+				EA59916B2BC7230A00205A93 /* ArtistInfoViewModel.swift in Sources */,
 				EA5990E42BC036DF00205A93 /* SceneDelegate.swift in Sources */,
 				EA59912E2BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift in Sources */,
-				EA5991302BC1C89D00205A93 /* MediaContentListRouter.swift in Sources */,
-				EA59912B2BC1C89D00205A93 /* MediaContentListProtocols.swift in Sources */,
-				EA59912C2BC1C89D00205A93 /* MediaContentListPresenter.swift in Sources */,
-				EA59912F2BC1C89D00205A93 /* MediaContentListInteractor.swift in Sources */,
+				EA5991572BC559B600205A93 /* MediaContentListRouter.swift in Sources */,
+				EA5991692BC71A8300205A93 /* ArtistInfoResponse.swift in Sources */,
 				EA5991242BC1C88600205A93 /* ContentCell.swift in Sources */,
 				EA5991392BC2795E00205A93 /* URLImageView.swift in Sources */,
 				EA5991402BC3E05300205A93 /* ListLoadingView.swift in Sources */,
+				EA5991642BC55C5C00205A93 /* DetailMediaContentInteractor.swift in Sources */,
 				EA5991342BC1D0E600205A93 /* MediaContentResponse.swift in Sources */,
+				EA5991662BC55C6900205A93 /* DetailMediaContentRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
