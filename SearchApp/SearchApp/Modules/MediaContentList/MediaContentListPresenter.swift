@@ -9,9 +9,21 @@ import Foundation
 
 final class MediaContentListPresenter: MediaContentListPresentationLogic {
     
+    // MARK: Constants
+    
+    private enum Constants {
+        static let dateFormatterOriginalFormat: String = "yyyy-MM-dd"
+    }
+    
     // MARK: Instance Properties
     
     private weak var viewController: MediaContentListDisplayLogic!
+    
+    private lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = Constants.dateFormatterOriginalFormat
+        return formatter
+    }()
     
     // MARK: Initializers
     
@@ -29,22 +41,31 @@ final class MediaContentListPresenter: MediaContentListPresentationLogic {
                 let artWorkUrl = item.artworkUrl100,
                 let trackName = item.trackName,
                 let releaseDate = item.releaseDate?.split(separator: "T")[0],
-                let country = item.country,
-                let trackPrice = item.trackPrice
+                let date = dateFormatter.date(from: String(releaseDate)),
+                let collectionName = item.collectionName,
+                let trackViewUrl = item.trackViewUrl,
+                let artistId = item.artistId
             else {
                 continue
             }
+            
+            dateFormatter.dateFormat = "dd.MM.yyyy"
+            
             mediaContentList.append(
                 MediaContentListViewModel(
                     artWorkUrl: artWorkUrl,
                     trackName: trackName,
                     artistName: item.artistName,
                     kind: item.kind,
-                    releaseDate: String(releaseDate),
-                    country: country,
-                    trackPrice: trackPrice > 0 ? "\(trackPrice)$" : "Free"
+                    releaseDate: dateFormatter.string(from: date),
+                    collectionName: collectionName,
+                    description: item.longDescription ?? "",
+                    trackViewUrlString: trackViewUrl,
+                    artistId: artistId
                 )
             )
+            
+            dateFormatter.dateFormat = Constants.dateFormatterOriginalFormat
         }
         viewController.displayContentMediaList(mediaContentList: mediaContentList)
     }

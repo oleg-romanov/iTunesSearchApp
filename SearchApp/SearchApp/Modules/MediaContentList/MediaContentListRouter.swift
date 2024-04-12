@@ -18,4 +18,12 @@ final class MediaContentListRouter: MediaContentListRoutingLogic {
     init(viewController: UIViewController!) {
         self.viewController = viewController
     }
+    
+    // MARK: Instance Methods
+    
+    func routeToDetailMediaContent(with model: MediaContentListViewModel) {
+        let detailMediaContentController = DetailMediaContentControllerConfigurator().setupModule()
+        detailMediaContentController.configure(by: model)
+        viewController.navigationController?.pushViewController(detailMediaContentController, animated: true)
+    }
 }
