@@ -36,6 +36,13 @@
 		EA5991662BC55C6900205A93 /* DetailMediaContentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991652BC55C6900205A93 /* DetailMediaContentRouter.swift */; };
 		EA5991692BC71A8300205A93 /* ArtistInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991682BC71A8300205A93 /* ArtistInfoResponse.swift */; };
 		EA59916B2BC7230A00205A93 /* ArtistInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59916A2BC7230A00205A93 /* ArtistInfoViewModel.swift */; };
+		EA59916F2BC930BF00205A93 /* SearchHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59916E2BC930BF00205A93 /* SearchHistoryCell.swift */; };
+		EA5991722BC9610300205A93 /* SearchAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA5991702BC9610200205A93 /* SearchAppModel.xcdatamodeld */; };
+		EA59919F2BC96DD600205A93 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59919E2BC96DD600205A93 /* DataBaseService.swift */; };
+		EA5991A12BC97CBC00205A93 /* SearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991A02BC97CBC00205A93 /* SearchQuery.swift */; };
+		EA5991AC2BC97D8F00205A93 /* SearchQueryDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991AA2BC97D8F00205A93 /* SearchQueryDB+CoreDataClass.swift */; };
+		EA5991AD2BC97D8F00205A93 /* SearchQueryDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991AB2BC97D8F00205A93 /* SearchQueryDB+CoreDataProperties.swift */; };
+		EA5991B02BC9993F00205A93 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991AF2BC9993F00205A93 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +77,13 @@
 		EA5991652BC55C6900205A93 /* DetailMediaContentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMediaContentRouter.swift; sourceTree = "<group>"; };
 		EA5991682BC71A8300205A93 /* ArtistInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfoResponse.swift; sourceTree = "<group>"; };
 		EA59916A2BC7230A00205A93 /* ArtistInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfoViewModel.swift; sourceTree = "<group>"; };
+		EA59916E2BC930BF00205A93 /* SearchHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryCell.swift; sourceTree = "<group>"; };
+		EA5991712BC9610200205A93 /* SearchAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SearchAppModel.xcdatamodel; sourceTree = "<group>"; };
+		EA59919E2BC96DD600205A93 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
+		EA5991A02BC97CBC00205A93 /* SearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQuery.swift; sourceTree = "<group>"; };
+		EA5991AA2BC97D8F00205A93 /* SearchQueryDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchQueryDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EA5991AB2BC97D8F00205A93 /* SearchQueryDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchQueryDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EA5991AF2BC9993F00205A93 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				EA5990F52BC039AC00205A93 /* App */,
-				EA5991062BC1850300205A93 /* Network */,
+				EA59919C2BC96DA200205A93 /* Services */,
 				EA5990F72BC03A3900205A93 /* Modules */,
 				EA59913A2BC3DF8000205A93 /* Extensions */,
 				EA5991372BC2793E00205A93 /* UIComponents */,
 				EA5990F62BC03A1700205A93 /* Resources */,
+				EA5991702BC9610200205A93 /* SearchAppModel.xcdatamodeld */,
 			);
 			path = SearchApp;
 			sourceTree = "<group>";
@@ -154,7 +169,8 @@
 		EA5991312BC1C8A100205A93 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				EA5991232BC1C88600205A93 /* ContentCell.swift */,
+				EA59916C2BC9308D00205A93 /* CollectionViewCell */,
+				EA59916D2BC9309900205A93 /* TableViewCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -163,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5991332BC1D0E600205A93 /* MediaContentResponse.swift */,
+				EA5991A02BC97CBC00205A93 /* SearchQuery.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,6 +239,50 @@
 				EA5991682BC71A8300205A93 /* ArtistInfoResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EA59916C2BC9308D00205A93 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA5991232BC1C88600205A93 /* ContentCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		EA59916D2BC9309900205A93 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA59916E2BC930BF00205A93 /* SearchHistoryCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		EA59919C2BC96DA200205A93 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA5991AE2BC9984000205A93 /* StorageManager */,
+				EA5991062BC1850300205A93 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EA59919D2BC96DBA00205A93 /* DataBaseService */ = {
+			isa = PBXGroup;
+			children = (
+				EA5991AA2BC97D8F00205A93 /* SearchQueryDB+CoreDataClass.swift */,
+				EA5991AB2BC97D8F00205A93 /* SearchQueryDB+CoreDataProperties.swift */,
+				EA59919E2BC96DD600205A93 /* DataBaseService.swift */,
+			);
+			path = DataBaseService;
+			sourceTree = "<group>";
+		};
+		EA5991AE2BC9984000205A93 /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				EA59919D2BC96DBA00205A93 /* DataBaseService */,
+				EA5991AF2BC9993F00205A93 /* StorageManager.swift */,
+			);
+			path = StorageManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,24 +363,31 @@
 				EA59911F2BC1934900205A93 /* APIConstants.swift in Sources */,
 				EA5991622BC55C4C00205A93 /* DetailMediaContentPresenter.swift in Sources */,
 				EA5991552BC559B600205A93 /* MediaContentListPresenter.swift in Sources */,
+				EA5991A12BC97CBC00205A93 /* SearchQuery.swift in Sources */,
 				EA5990E22BC036DF00205A93 /* AppDelegate.swift in Sources */,
 				EA59915E2BC55B7F00205A93 /* DetailMediaContentControllerConfigurator.swift in Sources */,
 				EA5991212BC1934900205A93 /* Request.swift in Sources */,
+				EA5991AC2BC97D8F00205A93 /* SearchQueryDB+CoreDataClass.swift in Sources */,
 				EA5991582BC559B600205A93 /* MediaContentListController.swift in Sources */,
 				EA59915C2BC55AEA00205A93 /* DetailMediaContentProtocols.swift in Sources */,
 				EA5991592BC559B600205A93 /* MediaContentListInteractor.swift in Sources */,
 				EA5991222BC1934900205A93 /* Response.swift in Sources */,
+				EA5991B02BC9993F00205A93 /* StorageManager.swift in Sources */,
 				EA59913C2BC3DFA900205A93 /* UIViewController + Extensions.swift in Sources */,
 				EA59916B2BC7230A00205A93 /* ArtistInfoViewModel.swift in Sources */,
 				EA5990E42BC036DF00205A93 /* SceneDelegate.swift in Sources */,
 				EA59912E2BC1C89D00205A93 /* MediaContentListControllerConfigurator.swift in Sources */,
 				EA5991572BC559B600205A93 /* MediaContentListRouter.swift in Sources */,
+				EA5991722BC9610300205A93 /* SearchAppModel.xcdatamodeld in Sources */,
 				EA5991692BC71A8300205A93 /* ArtistInfoResponse.swift in Sources */,
+				EA59919F2BC96DD600205A93 /* DataBaseService.swift in Sources */,
 				EA5991242BC1C88600205A93 /* ContentCell.swift in Sources */,
 				EA5991392BC2795E00205A93 /* URLImageView.swift in Sources */,
 				EA5991402BC3E05300205A93 /* ListLoadingView.swift in Sources */,
 				EA5991642BC55C5C00205A93 /* DetailMediaContentInteractor.swift in Sources */,
 				EA5991342BC1D0E600205A93 /* MediaContentResponse.swift in Sources */,
+				EA59916F2BC930BF00205A93 /* SearchHistoryCell.swift in Sources */,
+				EA5991AD2BC97D8F00205A93 /* SearchQueryDB+CoreDataProperties.swift in Sources */,
 				EA5991662BC55C6900205A93 /* DetailMediaContentRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +601,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA5991702BC9610200205A93 /* SearchAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA5991712BC9610200205A93 /* SearchAppModel.xcdatamodel */,
+			);
+			currentVersion = EA5991712BC9610200205A93 /* SearchAppModel.xcdatamodel */;
+			path = SearchAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EA5990D62BC036DF00205A93 /* Project object */;
 }

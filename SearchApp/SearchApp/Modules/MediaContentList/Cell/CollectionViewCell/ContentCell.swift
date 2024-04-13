@@ -151,6 +151,8 @@ final class ContentCell: UICollectionViewCell {
         contentView.addSubview(kindAndReleaseDateStackView)
     }
     
+    // MARK: Constraints
+    
     private func makeConstraints() {
         NSLayoutConstraint.activate([
             posterImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.posterImageViewTopInset),

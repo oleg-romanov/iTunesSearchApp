@@ -271,7 +271,6 @@ final class DetailMediaContentController: UIViewController {
     
     private func setup() {
         view.backgroundColor = Constants.viewBackgroundColor
-        navigationItem.largeTitleDisplayMode = .always
     }
     
     private func addSubviews() {
@@ -318,8 +317,8 @@ final class DetailMediaContentController: UIViewController {
             aboutArtistTitleLabel.leadingAnchor.constraint(equalTo: descriptionTitleLabel.leadingAnchor),
 
             artistInfoStackView.topAnchor.constraint(equalTo: aboutArtistTitleLabel.bottomAnchor, constant: Constants.artistInfoStackViewTopConstant),
-            artistInfoStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: Constants.artistInfoStackViewLeadingConstant),
-            artistInfoStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: Constants.artistInfoStackViewTrailingConstant),
+            artistInfoStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.artistInfoStackViewLeadingConstant),
+            artistInfoStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: Constants.artistInfoStackViewTrailingConstant),
             artistInfoStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: Constants.artistInfoStackViewBottomConstant)
         ])
     }
