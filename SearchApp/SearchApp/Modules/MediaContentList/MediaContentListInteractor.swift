@@ -15,11 +15,14 @@ final class MediaContentListInteractor: MediaContentListBusinessLogic {
     
     private let networkService: APIClient
     
+    private let storageManager: StorageManagerProtocol
+    
     // MARK: Initializers
     
     init(presenter: MediaContentListPresentationLogic) {
         self.presenter = presenter
         networkService = APIClient(baseURL: URL(string: APIConstants.baseURL))
+        storageManager = StorageManager()
     }
     
     // MARK: Instance Methods
@@ -37,5 +40,15 @@ final class MediaContentListInteractor: MediaContentListBusinessLogic {
         } catch {
             presenter.presentError(error)
         }
+    }
+    
+    func fetchAllHistoryRequests() async {
+        let searchHistory = await storageManager.fetchSearchQueries()
+        presenter.presentHistoryRequests(searchHistory)
+    }
+    
+    func saveSearchRequest(_ text: String, timestamp: Date) {
+        let searchQuery = SearchQuery(text: text, timestamp: timestamp)
+        storageManager.saveSearchQuery(searchQuery)
     }
 }
