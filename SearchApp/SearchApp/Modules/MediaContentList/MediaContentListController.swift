@@ -223,22 +223,20 @@ extension MediaContentListController: MediaContentListDisplayLogic {
     @MainActor func displayContentMediaList(mediaContentList: [MediaContentListViewModel]) {
         self.mediaContentList = mediaContentList
         DispatchQueue.main.async { [weak self] in
-            guard let self = self else { return }
-            self.mainTitleInfo.isHidden = true
+            self?.mainTitleInfo.isHidden = true
             if (mediaContentList.isEmpty) {
-                mainTitleInfo.text = Constants.maintitleInfoEmptyResultStateText
-                self.mainTitleInfo.isHidden = false
+                self?.mainTitleInfo.text = Constants.maintitleInfoEmptyResultStateText
+                self?.mainTitleInfo.isHidden = false
             }
-            self.hideListLoading()
-            self.collectionView.reloadData()
+            self?.hideListLoading()
+            self?.collectionView.reloadData()
         }
     }
     
     @MainActor func displayError(with message: String) {
         DispatchQueue.main.async { [weak self] in
             self?.hideListLoading()
-            // TODO: Показ алерта
-            print(message)
+            self?.showErrorAlert(message: message)
         }
     }
 }

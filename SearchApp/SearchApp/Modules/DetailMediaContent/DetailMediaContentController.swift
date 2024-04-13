@@ -363,8 +363,7 @@ extension DetailMediaContentController : DetailMediaContentDisplayLogic {
     func displayError(with message: String) {
         DispatchQueue.main.async { [weak self] in
             self?.hideListLoading()
-            // TODO: Показ алерта
-            print(message)
+            self?.showErrorAlert(message: message)
         }
     }
 }

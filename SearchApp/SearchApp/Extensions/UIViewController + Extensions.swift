@@ -46,3 +46,26 @@ extension UIViewController {
         return window
     }
 }
+
+extension UIViewController {
+    func showErrorAlert(message: String) {
+        guard let window = getKeyWindow() else {
+            assertionFailure("Can't get keyWindow")
+            return
+        }
+
+        let errorView = BottomErrorView(text: message)
+        errorView.translatesAutoresizingMaskIntoConstraints = false
+        window.addSubview(errorView)
+        window.bringSubviewToFront(errorView)
+
+        NSLayoutConstraint.activate([
+            errorView.bottomAnchor.constraint(equalTo: window.safeAreaLayoutGuide.bottomAnchor, constant: -16.0),
+            errorView.leadingAnchor.constraint(equalTo: window.safeAreaLayoutGuide.leadingAnchor, constant: 16.0),
+            errorView.trailingAnchor.constraint(equalTo: window.safeAreaLayoutGuide.trailingAnchor, constant: -16.0),
+            errorView.heightAnchor.constraint(equalToConstant: 80.0)
+        ])
+
+        errorView.show()
+    }
+}
