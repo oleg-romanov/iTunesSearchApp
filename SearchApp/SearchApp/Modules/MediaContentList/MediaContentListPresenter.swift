@@ -70,6 +70,17 @@ final class MediaContentListPresenter: MediaContentListPresentationLogic {
         viewController.displayContentMediaList(mediaContentList: mediaContentList)
     }
     
+    func presentHistoryRequests(_ requests: [SearchQuery]?) {
+        guard let allSearchHistory = requests else {
+            viewController.displayError(with: "An error occurred in the operation of the local storage")
+            return
+        }
+        
+        let sortedSearchHistory = allSearchHistory.sorted { $0.timestamp > $1.timestamp }.prefix(5)
+        
+        viewController.displaySearchHistory(allSearchHistory, fiveLastRequests: Array(sortedSearchHistory))
+    }
+    
     func presentError(_ error: Error) {
         viewController.displayError(with: error.localizedDescription)
     }
