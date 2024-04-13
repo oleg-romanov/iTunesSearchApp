@@ -43,6 +43,7 @@
 		EA5991AC2BC97D8F00205A93 /* SearchQueryDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991AA2BC97D8F00205A93 /* SearchQueryDB+CoreDataClass.swift */; };
 		EA5991AD2BC97D8F00205A93 /* SearchQueryDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991AB2BC97D8F00205A93 /* SearchQueryDB+CoreDataProperties.swift */; };
 		EA5991B02BC9993F00205A93 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991AF2BC9993F00205A93 /* StorageManager.swift */; };
+		EA5991B22BCAD75D00205A93 /* BottomErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5991B12BCAD75D00205A93 /* BottomErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		EA5991AA2BC97D8F00205A93 /* SearchQueryDB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchQueryDB+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EA5991AB2BC97D8F00205A93 /* SearchQueryDB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchQueryDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EA5991AF2BC9993F00205A93 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		EA5991B12BCAD75D00205A93 /* BottomErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				EA5991382BC2795E00205A93 /* URLImageView.swift */,
 				EA59913D2BC3E03200205A93 /* BaseLoadingView.swift */,
 				EA59913F2BC3E05300205A93 /* ListLoadingView.swift */,
+				EA5991B12BCAD75D00205A93 /* BottomErrorView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				EA59915E2BC55B7F00205A93 /* DetailMediaContentControllerConfigurator.swift in Sources */,
 				EA5991212BC1934900205A93 /* Request.swift in Sources */,
 				EA5991AC2BC97D8F00205A93 /* SearchQueryDB+CoreDataClass.swift in Sources */,
+				EA5991B22BCAD75D00205A93 /* BottomErrorView.swift in Sources */,
 				EA5991582BC559B600205A93 /* MediaContentListController.swift in Sources */,
 				EA59915C2BC55AEA00205A93 /* DetailMediaContentProtocols.swift in Sources */,
 				EA5991592BC559B600205A93 /* MediaContentListInteractor.swift in Sources */,
