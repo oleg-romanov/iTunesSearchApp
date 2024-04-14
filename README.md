@@ -11,7 +11,7 @@ iTunesSearchApp - is an iOS application developed using Swift 5 and UIKit. The a
 - API: [iTunes Search API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html#//apple_ref/doc/uid/TP40017632-CH3-SW1)
 - CoreData
 
-## Установка и запуск
+## Installation and Run
 1. Clone the project repository:
 ```
 git clone git@github.com:oleg-romanov/iTunesSearchApp.git
@@ -25,7 +25,7 @@ cd iTunesSearchApp/SearchApp
 open SearchApp.xcodeproj
 ```
 
-## Примеры работы iTunesSearchApp:
+## Examples work iTunesSearchApp:
 Search History with filtering and search results.
 
 ![requests history and search](https://raw.githubusercontent.com/oleg-romanov/iTunesSearchApp/main/Imgs/requests_history_and_search.png)
