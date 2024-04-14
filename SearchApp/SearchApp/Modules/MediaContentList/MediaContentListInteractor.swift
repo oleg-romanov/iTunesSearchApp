@@ -30,8 +30,7 @@ final class MediaContentListInteractor: MediaContentListBusinessLogic {
     func fetchContentMediaList(term: String) async {
         let query: [(String, String?)] = [
             ("term", term),
-            ("media", "music"),
-            ("media", "tvShow"),
+            ("media", "all"),
             ("limit", "40")
         ]
         do {

@@ -14,7 +14,7 @@ struct MediaContentResponse: Decodable {
 
 struct Result: Decodable {
     let wrapperType: String?
-    let kind: String
+    let kind: String?
     let artistId: Int?
     let collectionId: Int?
     let trackId: Int?

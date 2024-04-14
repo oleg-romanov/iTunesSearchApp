@@ -13,6 +13,8 @@ final class MediaContentListPresenter: MediaContentListPresentationLogic {
     
     private enum Constants {
         static let dateFormatterOriginalFormat: String = "yyyy-MM-dd"
+        static let songKind: String = "song"
+        static let tvEpisodeKind: String = "tv-episode"
     }
     
     // MARK: Instance Properties
@@ -38,16 +40,19 @@ final class MediaContentListPresenter: MediaContentListPresentationLogic {
         
         for item in response.results {
             guard
+                let kind = item.kind,
                 let artWorkUrl = item.artworkUrl100,
                 let trackName = item.trackName,
                 let releaseDate = item.releaseDate?.split(separator: "T")[0],
                 let date = dateFormatter.date(from: String(releaseDate)),
                 let collectionName = item.collectionName,
                 let trackViewUrl = item.trackViewUrl,
-                let artistId = item.artistId
+                let artistId = item.artistId,
+                kind == Constants.tvEpisodeKind || kind == Constants.songKind
             else {
                 continue
             }
+            
             
             dateFormatter.dateFormat = "dd.MM.yyyy"
             
@@ -56,7 +61,7 @@ final class MediaContentListPresenter: MediaContentListPresentationLogic {
                     artWorkUrl: artWorkUrl,
                     trackName: trackName,
                     artistName: item.artistName,
-                    kind: item.kind,
+                    kind: kind,
                     releaseDate: dateFormatter.string(from: date),
                     collectionName: collectionName,
                     description: item.longDescription ?? "",
