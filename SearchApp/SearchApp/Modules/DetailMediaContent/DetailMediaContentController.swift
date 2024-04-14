@@ -59,19 +59,19 @@ final class DetailMediaContentController: UIViewController {
         static let separatorViewTrailingConstant: CGFloat = -8
         
         static let descriptionTitleLabelTopConstant: CGFloat = 16
-        static let descriptionTitleLabelLeadingConstant: CGFloat = 8
+        static let descriptionTitleLabelLeadingConstant: CGFloat = 16
         
         static let descriptionTextLabelTopConstant: CGFloat = 8
-        static let descriptionTextLabelLeadingConstant: CGFloat = 8
-        static let descriptionTextLabelTrailingConstant: CGFloat = -8
+        static let descriptionTextLabelLeadingConstant: CGFloat = 16
+        static let descriptionTextLabelTrailingConstant: CGFloat = -16
         static let descriptionTextLabelFont: UIFont = .systemFont(ofSize: 20, weight: .regular)
         
         static let aboutArtistTitleLabelTopConstant: CGFloat = 16
         static let aboutArtistTitleLabelText: String = "Artist:"
         
         static let artistInfoStackViewTopConstant: CGFloat = 8
-        static let artistInfoStackViewLeadingConstant: CGFloat = 8
-        static let artistInfoStackViewTrailingConstant: CGFloat = -8
+        static let artistInfoStackViewLeadingConstant: CGFloat = 16
+        static let artistInfoStackViewTrailingConstant: CGFloat = -16
         static let artistInfoStackViewBottomConstant: CGFloat = -16
         static let artistInfoStackViewSpacing: CGFloat = 8
     }

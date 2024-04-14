@@ -25,8 +25,8 @@ final class MediaContentListController: UIViewController {
         static let collectionViewCellWidth: CGFloat = (UIScreen.main.bounds.width - (Constants.collectionViewInsets.left + Constants.collectionViewInsets.right + Constants.collectionViewMinimumInteritemSpacing)) / 2
         static let collectionViewCellHeight: CGFloat = Constants.collectionViewCellWidth + 100
         
-        static let mainTitleInfoLeadingInset: CGFloat = 16
-        static let mainTitleInfoTrailingInset: CGFloat = -16
+        static let mainTitleInfoLeadingInset: CGFloat = 32
+        static let mainTitleInfoTrailingInset: CGFloat = -32
         
         static let viewBackgroundColor: UIColor = .systemBackground
     }
@@ -86,6 +86,9 @@ final class MediaContentListController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.font = .systemFont(ofSize: 18, weight: .medium)
+        label.textColor = .gray
         label.text = Constants.maintitleInfoStartedStateText
         label.sizeToFit()
         return label
