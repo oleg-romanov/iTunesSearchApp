@@ -27,7 +27,10 @@ open SearchApp.xcodeproj
 
 ## Примеры работы iTunesSearchApp:
 Search History with filtering and search results.
+
 ![requests history and search](https://raw.githubusercontent.com/oleg-romanov/iTunesSearchApp/main/Imgs/requests_history_and_search.png)
 
+
 Handling empty search results and possible errors.
+
 ![an empty result and no internet connection](https://raw.githubusercontent.com/oleg-romanov/iTunesSearchApp/main/Imgs/empty_result_and_no_internet_connection.png)
